@@ -108,3 +108,5 @@ ENV/
 #!.vscode/extensions.json
 .history
 
+#Scraper#
+results/
