@@ -3,7 +3,7 @@ Program scrapes Google Adwords for current ads displayed for certain keywords. U
 
 SETUP
 --------------------------------------------------------------------
-This program uses Selenium for scraping the webpage. Make sure that geckodriver is installed and is in PATH in order to work. geckodriver can be obtained from https://github.com/mozilla/geckodriver/releases
+This program uses Selenium for scraping the webpage. Make sure that geckodriver is installed and is in PATH in order to work. **geckodriver** can be obtained from https://github.com/mozilla/geckodriver/releases
 
 Options are contained in the config folder:
 
@@ -25,6 +25,8 @@ DEPENDENCIES
 
 RUNNING
 --------------------------------------------------------------------
+Make sure to install **geckodriver**
+
 1) To run, go to the main directory (the one with scrape.py) in a terminal.
 2) Type <code>source Adwords-Scraping/bin/activate</code>
 3) Type <code>python scrape.py</code>
