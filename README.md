@@ -18,8 +18,10 @@ regions.txt contains the location ids used in the google adwords url.
 
 All outputted results are contained in the results folder
 
-Python dependencies needed for install:
+DEPENDENCIES
+--------------------------------------------------------------------
 -virtualenv         (try: <code>pip install virtualenv</code>)
+
 
 RUNNING
 --------------------------------------------------------------------
