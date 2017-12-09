@@ -44,7 +44,7 @@ for d_ind in range(0, len(device_codes)):
         for k_ind in range(0, len(keyword_list)):
             adwords_url = 'https://adwords.google.com/anon/AdPreview?lang=en&loc='+region_codes[r_ind]+'&device='+device_codes[d_ind]+'&st='+keyword_list[k_ind]
             driver.get(adwords_url)
-            time.sleep(5)
+            time.sleep(random.randint(10,20))
             #print(driver.page_source)
             adwords_html = BeautifulSoup(driver.page_source, 'html.parser')
             #print(adwords_html.prettify())
