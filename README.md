@@ -22,8 +22,6 @@ DEPENDENCIES
 --------------------------------------------------------------------
 - geckodriver
 
-- virtualenv         (try: <code>pip install virtualenv</code>)
-
 - selenium           (try: <code>pip install selenium</code>)
 
 - beautifulsoup4     (try: <code>pip install beautifulsoup4</code>
@@ -31,9 +29,8 @@ DEPENDENCIES
 
 RUNNING
 --------------------------------------------------------------------
-Make sure to install **geckodriver**
+Make sure to install **geckodriver** and add to PATH
 
 1) To run, go to the main directory (the one with scrape.py) in a terminal.
-2) Type <code>source Adwords-Scraping/bin/activate</code>
-3) Type <code>python scrape.py</code>
-4) Type <code>deactivate</code> in order to exit virtual environment when complete
+2) Type <code>python scrape.py</code>
+
