@@ -110,3 +110,4 @@ ENV/
 
 #Scraper#
 results/
+geckodriver.log
