@@ -20,7 +20,13 @@ All outputted results are contained in the results folder
 
 DEPENDENCIES
 --------------------------------------------------------------------
--virtualenv         (try: <code>pip install virtualenv</code>)
+- geckodriver
+
+- virtualenv         (try: <code>pip install virtualenv</code>)
+
+- selenium           (try: <code>pip install selenium</code>)
+
+- beautifulsoup4     (try: <code>pip install beautifulsoup4</code>
 
 
 RUNNING
