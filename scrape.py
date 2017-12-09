@@ -2,6 +2,7 @@ import datetime
 import re
 import time
 import os
+import random
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
@@ -69,6 +70,6 @@ for d_ind in range(0, len(device_codes)):
 
             with open(file_path,'w',encoding='UTF-8') as out_file:
                 out_file.write(str(ads))
-            time.sleep(5) #For putting a delay between requests to not be as suspicious as a bot
+            time.sleep(random.randint(10,20)) #For putting a delay between requests to not be as suspicious as a bot
 
 driver.close()
