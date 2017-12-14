@@ -54,11 +54,8 @@ for d_ind in range(0, len(device_codes)):
 
             driver.get(src_url)
             search_results = BeautifulSoup(driver.page_source, 'html.parser')
-            if device_codes[d_ind] == 30000:
-                ads = search_results.find_all("li", class_="ads-ad")
-            else:
-                ads = search_results.find_all("div", class_="ads-ad") 
-
+            
+            ads = search_results.find_all(class_="ads-ad")
             time_str = date.now().strftime('%H-%M')
             date_str = date.now().strftime('%m-%d-%y')
 
