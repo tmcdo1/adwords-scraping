@@ -45,17 +45,15 @@ for d_ind in range(0, len(device_codes)):
             adwords_url = 'https://adwords.google.com/anon/AdPreview?lang=en&loc='+region_codes[r_ind]+'&device='+device_codes[d_ind]+'&st='+keyword_list[k_ind]
             driver.get(adwords_url)
             time.sleep(random.randint(10,20))
-            #print(driver.page_source)
+
             adwords_html = BeautifulSoup(driver.page_source, 'html.parser')
-            #print(adwords_html.prettify())
             iframe = adwords_html.find("iframe", class_='iframe-preview')
-            #print(iframe)
             src_url = iframe['src']
 
             driver.get(src_url)
             search_results = BeautifulSoup(driver.page_source, 'html.parser')
-            
             ads = search_results.find_all(class_="ads-ad")
+
             time_str = date.now().strftime('%H-%M')
             date_str = date.now().strftime('%m-%d-%y')
 
